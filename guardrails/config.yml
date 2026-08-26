@@ -17,6 +17,7 @@ rails:
       - check jailbreak
       - check off topic
       - check pii request
+      - check prompt injection
   output:
     flows:
       - check sensitive output

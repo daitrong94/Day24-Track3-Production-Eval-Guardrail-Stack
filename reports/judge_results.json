@@ -1,0 +1,152 @@
+{
+  "pairwise_samples": [
+    {
+      "question_id": 21,
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "winner_pass1": "B",
+      "winner_pass2": "B",
+      "final_winner": "B",
+      "position_consistent": true,
+      "reasoning_pass1": "Answer B cung cấp thông tin chính xác và đầy đủ về số ngày phép và lương cho nhân viên Senior, trong khi Answer A không có thông tin nào.",
+      "reasoning_pass2": "Answer A cung cấp thông tin chính xác về số ngày phép và khoảng lương, trong khi Answer B không có thông tin."
+    },
+    {
+      "question_id": 33,
+      "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm theo v2024 là bao nhiêu?",
+      "winner_pass1": "B",
+      "winner_pass2": "B",
+      "final_winner": "B",
+      "position_consistent": true,
+      "reasoning_pass1": "Answer B cung cấp thông tin chính xác về phụ cấp hàng tháng và số ngày phép năm, trong khi Answer A không cung cấp thông tin nào.",
+      "reasoning_pass2": "Answer A cung cấp thông tin chính xác về phụ cấp và số ngày phép, trong khi Answer B không đưa ra thông tin nào."
+    },
+    {
+      "question_id": 46,
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "winner_pass1": "B",
+      "winner_pass2": "B",
+      "final_winner": "B",
+      "position_consistent": true,
+      "reasoning_pass1": "Answer B cung cấp thông tin chính xác và đầy đủ về việc nhân viên thử việc có được nghỉ phép năm hay không, trong khi Answer A chỉ nói rằng không tìm thấy thông tin, không trả lời câu hỏi.",
+      "reasoning_pass2": "Answer A cung cấp thông tin rõ ràng và chính xác về việc nhân viên thử việc không được nghỉ phép năm, mặc dù có một phần nêu về quy trình xin nghỉ không lương. Answer B không cung cấp thông tin hữu ích."
+    },
+    {
+      "question_id": 48,
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm sức khỏe PVI không?",
+      "winner_pass1": "B",
+      "winner_pass2": "B",
+      "final_winner": "B",
+      "position_consistent": true,
+      "reasoning_pass1": "Answer B cung cấp thông tin chi tiết về quyền lợi bảo hiểm sức khỏe PVI của nhân viên thử việc, mặc dù có một số thông tin liên quan đến exclusion, nhưng vẫn chính xác và đầy đủ hơn so với Answer A.",
+      "reasoning_pass2": "Answer A cung cấp thông tin chính xác về việc nhân viên thử việc không được hưởng gói PVI và lý do rõ ràng. Answer B không cung cấp thông tin nào."
+    },
+    {
+      "question_id": 50,
+      "question": "Nhân viên Manager có thể dùng VPN cá nhân (như NordVPN) khi WFH để tăng bảo mật thêm không?",
+      "winner_pass1": "B",
+      "winner_pass2": "B",
+      "final_winner": "B",
+      "position_consistent": true,
+      "reasoning_pass1": "Answer B cung cấp thông tin chính xác về chính sách VPN và lý do cấm sử dụng VPN cá nhân, trong khi Answer A không đưa ra thông tin nào.",
+      "reasoning_pass2": "Answer A cung cấp thông tin chính xác và rõ ràng về chính sách VPN của công ty, trong khi Answer B không đưa ra thông tin nào."
+    }
+  ],
+  "bias_report": {
+    "total_judged": 5,
+    "position_bias_rate": 0.0,
+    "position_bias_count": 0,
+    "verbosity_bias": 1.0,
+    "verbosity_details": {
+      "a_wins_a_longer": 0,
+      "b_wins_b_longer": 5,
+      "total_decisive": 5
+    },
+    "interpretation": "Position bias thấp — judge ổn định."
+  },
+  "judge_vs_human": {
+    "cohen_kappa": 1.0,
+    "interpretation": "almost perfect",
+    "details": [
+      {
+        "question_id": 1,
+        "question": "Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời cung cấp thông tin chính xác về số ngày nghỉ có lương khi kết hôn, phù hợp với đáp án tham chiếu."
+      },
+      {
+        "question_id": 5,
+        "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+        "human_label": 0,
+        "judge_label": 0,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời sai lệch vì cần Tổng Giám đốc phê duyệt trong khi câu trả lời nói là Giám đốc phòng ban."
+      },
+      {
+        "question_id": 12,
+        "question": "Thưởng Tết tối thiểu cho nhân viên chính thức có từ 6 tháng trở lên là bao nhiêu?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời đúng về thông tin chính khi nêu rằng nhân viên được thưởng Tết tối thiểu 1 tháng lương, phù hợp với đáp án tham chiếu."
+      },
+      {
+        "question_id": 21,
+        "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời cung cấp thông tin chính xác về số ngày phép (18 ngày) và lương (20-35 triệu VNĐ) theo đúng nội dung tham chiếu."
+      },
+      {
+        "question_id": 23,
+        "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng. Phải hoàn trả bao nhiêu?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời phản ánh đúng thông tin từ đáp án tham chiếu về việc nhân viên phải hoàn trả 25 triệu do nghỉ việc trước hạn cam kết 1 năm."
+      },
+      {
+        "question_id": 29,
+        "question": "Nhân viên tạm ứng 8 triệu, chưa thanh toán sau 30 ngày. Ai phê duyệt và phí phạt là bao nhiêu?",
+        "human_label": 0,
+        "judge_label": 0,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời thiếu thông tin về việc phê duyệt cần có sự đồng ý của Kế toán trưởng, chỉ đề cập đến Trưởng phòng. Phí phạt cũng không được tính rõ ràng và chính xác."
+      },
+      {
+        "question_id": 33,
+        "question": "Nhân viên Manager có thâm niên 12 năm: tổng phụ cấp hàng tháng và số ngày phép năm?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời đúng về số ngày phép (19 ngày) và phụ cấp hàng tháng (1.500.000 VNĐ). Không có thông tin sai lệch hay mâu thuẫn với đáp án tham chiếu."
+      },
+      {
+        "question_id": 41,
+        "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+        "human_label": 0,
+        "judge_label": 0,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời sai vì thông tin về ngày phép trong chính sách v2023 (12 ngày) đã bị thay thế bởi chính sách v2024, cho biết rằng nhân viên được nghỉ 15 ngày cơ bản (+1 ngày cho mỗi 3 năm thâm niên)."
+      },
+      {
+        "question_id": 46,
+        "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+        "human_label": 1,
+        "judge_label": 1,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời đúng và phù hợp với đáp án tham chiếu, không có thông tin sai lệch hoặc mâu thuẫn."
+      },
+      {
+        "question_id": 50,
+        "question": "Nhân viên Manager có thể dùng VPN cá nhân (NordVPN) khi WFH không?",
+        "human_label": 0,
+        "judge_label": 0,
+        "agree": true,
+        "judge_reasoning": "Câu trả lời sai lệch với chính sách công ty khi khẳng định rằng nhân viên có thể sử dụng VPN cá nhân, trong khi chính sách cấm điều này."
+      }
+    ]
+  }
+}
